@@ -81,11 +81,11 @@ export default function SplashScreen() {
             <div className="flex items-center justify-center gap-2">
               <div className="relative">
                 <Image
-                  src="/arvintech-cube-logo.png"
+                  src="/arvintech-mini-logo.png"
                   alt="ArvinTech Logo"
                   width={800}
                   height={240}
-                  className="w-auto h-32 md:h-40 lg:h-48 animate-slow-rotate px-[5px]"
+                  className="w-auto h-32 md:h-40 lg:h-48 animate-slow-rotate"
                   priority
                 />
               </div>
@@ -93,9 +93,9 @@ export default function SplashScreen() {
                 <Image
                   src="/amplify-your-mind.png"
                   alt="ArvinTech - Amplify Your Mind"
-                  width={400}
-                  height={120}
-                  className="w-auto h-12 md:h-16 lg:h-20 opacity-90"
+                  width={800}
+                  height={240}
+                  className="w-auto h-24 md:h-32 lg:h-40 opacity-90"
                   priority
                 />
               </div>
