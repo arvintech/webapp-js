@@ -78,15 +78,27 @@ export default function SplashScreen() {
         <div className="text-center px-8">
           {/* Logo container with enhanced glow effect */}
           <div className={`mb-8 transition-all duration-1000 ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}>
-            <div className="relative inline-block">
-              <Image
-                src="/arvintech-cube-logo.png"
-                alt="ArvinTech Logo"
-                width={800}
-                height={240}
-                className="w-auto h-40 md:h-48 lg:h-56 animate-slow-rotate"
-                priority
-              />
+            <div className="flex items-center justify-center gap-2">
+              <div className="relative">
+                <Image
+                  src="/arvintech-cube-logo.png"
+                  alt="ArvinTech Logo"
+                  width={800}
+                  height={240}
+                  className="w-auto h-32 md:h-40 lg:h-48 animate-slow-rotate px-[5px]"
+                  priority
+                />
+              </div>
+              <div className="animate-fade-in-text">
+                <Image
+                  src="/amplify-your-mind.png"
+                  alt="ArvinTech - Amplify Your Mind"
+                  width={400}
+                  height={120}
+                  className="w-auto h-12 md:h-16 lg:h-20 opacity-90"
+                  priority
+                />
+              </div>
             </div>
           </div>
 

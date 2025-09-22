@@ -202,6 +202,18 @@
   }
 }
 
+/* Added fade-in animation for text logo that appears after cube animation */
+@keyframes fade-in-text {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
@@ -223,6 +235,12 @@
 /* Added slow cube rotation class that runs once for 11 seconds */
 .animate-slow-rotate {
   animation: slow-rotate 11s ease-in-out forwards;
+}
+
+/* Added animation class for text logo that appears after cube animation completes */
+.animate-fade-in-text {
+  animation: fade-in-text 2s ease-out 11s forwards;
+  opacity: 0;
 }
 
 /* Added small caps utility class */
