@@ -58,12 +58,6 @@ export default function SplashScreen() {
             >
               Blog
             </Link>
-            <Link
-              href="/work-with-us"
-              className="text-slate-300 hover:text-white transition-colors duration-300 text-sm font-medium"
-            >
-              Work with Us
-            </Link>
           </div>
         </div>
       </nav>
