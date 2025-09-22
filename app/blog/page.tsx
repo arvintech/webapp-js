@@ -103,11 +103,11 @@ export default function BlogPage() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/arvintech-logo-white.png"
+              src="/arvintech-cube-logo.png"
               alt="ArvinTech Logo"
               width={120}
               height={40}
-              className="h-8 w-auto"
+              className="h-24 w-auto"
             />
           </Link>
           <div className="flex space-x-8">
@@ -122,6 +122,9 @@ export default function BlogPage() {
             </Link>
             <Link href="/blog" className="text-white font-medium">
               Blog
+            </Link>
+            <Link href="/work-with-us" className="text-slate-300 hover:text-white transition-colors">
+              Work with Us
             </Link>
           </div>
         </div>

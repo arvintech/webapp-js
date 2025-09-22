@@ -92,11 +92,11 @@ export default function NewsPage() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/arvintech-logo-white.png"
+              src="/arvintech-cube-logo.png"
               alt="ArvinTech Logo"
               width={120}
               height={32}
-              className="h-8 w-auto"
+              className="h-24 w-auto"
             />
           </Link>
           <div className="flex space-x-8">
@@ -109,8 +109,11 @@ export default function NewsPage() {
             <Link href="/news" className="text-white font-medium">
               News
             </Link>
-            <Link href="/blogs" className="text-slate-300 hover:text-white transition-colors duration-300">
-              Blogs
+            <Link href="/blog" className="text-slate-300 hover:text-white transition-colors duration-300">
+              Blog
+            </Link>
+            <Link href="/work-with-us" className="text-slate-300 hover:text-white transition-colors duration-300">
+              Work with Us
             </Link>
           </div>
         </div>

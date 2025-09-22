@@ -16,7 +16,7 @@ export default function WorkWithUs() {
       {/* Navigation */}
       <nav className="flex items-center justify-between p-6 relative z-10">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/arvintech-logo-white.png" alt="arvintech" width={40} height={40} className="rounded-lg" />
+          <Image src="/arvintech-cube-logo.png" alt="arvintech" width={40} height={40} className="rounded-lg" />
           <span className="arvintech-brand text-white text-xl font-bold">arvintech</span>
         </Link>
         <div className="flex items-center space-x-6">
@@ -346,7 +346,7 @@ export default function WorkWithUs() {
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-emerald-400/50 transition-all duration-300">
               <div className="text-emerald-400 text-3xl mb-4">⚡</div>
               <h3 className="text-xl font-semibold text-white mb-3 flex items-center">Amplified Potential</h3>
               <p className="text-slate-300">

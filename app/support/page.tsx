@@ -8,26 +8,23 @@ export default function SupportPage() {
       {/* Navigation */}
       <nav className="flex justify-between items-center p-6">
         <Link href="/" className="flex items-center">
-          <Image
-            src="/arvintech-logo-white.png"
-            alt="ArvinTech Logo"
-            width={200}
-            height={120}
-            className="h-12 w-auto"
-          />
+          <Image src="/arvintech-cube-logo.png" alt="ArvinTech Logo" width={200} height={50} className="h-24 w-auto" />
         </Link>
         <div className="flex space-x-8">
           <Link href="/support" className="text-white hover:text-gray-300 transition-colors">
             Support
           </Link>
-          <Link href="#about" className="text-gray-400 hover:text-white transition-colors">
+          <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
             About
           </Link>
-          <Link href="#news" className="text-gray-400 hover:text-white transition-colors">
+          <Link href="/news" className="text-gray-400 hover:text-white transition-colors">
             News
           </Link>
-          <Link href="#blogs" className="text-gray-400 hover:text-white transition-colors">
-            Blogs
+          <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
+            Blog
+          </Link>
+          <Link href="/work-with-us" className="text-gray-400 hover:text-white transition-colors">
+            Work with Us
           </Link>
         </div>
       </nav>

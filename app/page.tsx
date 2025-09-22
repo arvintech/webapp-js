@@ -17,7 +17,20 @@ export default function SplashScreen() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-black flex flex-col relative overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/usa-from-moon-night.jpg"
+          alt="USA from Moon at Night"
+          fill
+          className="object-cover opacity-80"
+          priority
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
       <nav className="relative z-20 w-full px-8 py-6">
         <div className="max-w-6xl mx-auto flex justify-end">
           <div className="flex space-x-8">
@@ -43,16 +56,22 @@ export default function SplashScreen() {
               href="/blog"
               className="text-slate-300 hover:text-white transition-colors duration-300 text-sm font-medium"
             >
-              Blogs
+              Blog
+            </Link>
+            <Link
+              href="/work-with-us"
+              className="text-slate-300 hover:text-white transition-colors duration-300 text-sm font-medium"
+            >
+              Work with Us
             </Link>
           </div>
         </div>
       </nav>
 
       {/* Background decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute inset-0 overflow-hidden z-10">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse" />
       </div>
 
       <div className="flex-1 flex items-center justify-center relative z-10">
@@ -61,11 +80,11 @@ export default function SplashScreen() {
           <div className={`mb-8 transition-all duration-1000 ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}>
             <div className="relative inline-block">
               <Image
-                src="/arvintech-logo-white.png"
+                src="/arvintech-cube-logo.png"
                 alt="ArvinTech Logo"
                 width={800}
                 height={240}
-                className="w-auto h-40 md:h-48 lg:h-56"
+                className="w-auto h-40 md:h-48 lg:h-56 animate-slow-rotate"
                 priority
               />
             </div>
